@@ -121,10 +121,10 @@ const Projects = () => {
                     <div className='col-span-12'>
                         <FeaturedProject 
                             title="Course Scheduler"
-                            link="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
+                            link="https://github.com/Fahrin0802/ENGG_Timetable.git"
                             summary="Application allows students at the University of Alberta to Visualize their Timetables for the Semester. 
                             App is coded in ReactJS & Java SpringBoot and makes used of interactive featues such as Drag and Drop, Tooltips, Drodown Menus, etc"
-                            githubLink="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
+                            githubLink="https://github.com/Fahrin0802/ENGG_Timetable.git"
                             type="Project"
                             video="https://github.com/Farhan-Faisal/ENGG_Timetable_Demo/assets/77621905/cecbcfc9-8b7d-49f6-ad74-9c6a50358ce6"
                             img="https://github.com/user-attachments/assets/4cd8c958-3781-4137-b442-7b2b9615e2dc"
