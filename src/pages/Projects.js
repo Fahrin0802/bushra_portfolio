@@ -132,13 +132,14 @@ const Projects = () => {
                     </div>
 
                     <div className='col-span-6'>
+
                         <Project 
                             title="Inventory Manager"
-                            link="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
-                            githubLink="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
+                            link="https://github.com/CMPUT301F23T16/HoneyBadgersProject/wiki/Updated-User-Interface#updated-user-interface-for-project-part-4"
+                            githubLink="https://github.com/CMPUT301F23T16/HoneyBadgersProject.git"
                             type="Project"
-                            video="https://github.com/Farhan-Faisal/ENGG_Timetable_Demo/assets/77621905/cecbcfc9-8b7d-49f6-ad74-9c6a50358ce6"
-                            img="https://github.com/user-attachments/assets/4cd8c958-3781-4137-b442-7b2b9615e2dc"
+                            video=""
+                            img="https://github.com/user-attachments/assets/795760e9-26af-40c3-b53a-559c7036d34a"
                         />
                     </div>
                     <div className='col-span-6'>
