@@ -46,7 +46,7 @@ const Education = () => {
                 <EduDetails
                     type="BSc in Computer Engineering"
                     time="2020-2025" place="University of Alberta"
-                    info="cGPA: 3.0; Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+                    info="Scholarships: UAlberta County Scholarship; Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
                 />
 
             </ul>
