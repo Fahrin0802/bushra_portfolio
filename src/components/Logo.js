@@ -22,4 +22,4 @@ const Logo = () => {
         </div>
     )
 }
-export default Logo
+export default Logo;

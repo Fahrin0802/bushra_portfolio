@@ -5,18 +5,18 @@ import LiIcon from './LiIcon'
 const Details = ({position, company, time, address, work}) => {
     const ref = useRef(null);
     return(
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[80%] mx-auto flex flex-col items-center justify-between'>
+        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[80%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
             <LiIcon reference={ref}/>
             <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}}>
-                <h3 className="" style={{fontWeight: 'bold', fontSize:'25px'}}>{position}&nbsp;@{company}</h3>
-                <span className="" style={{fontWeight: 'bold', color: 'black', opacity:'75'}}>{time} | {address}</span>
-                <ul className="w-full">
+            <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{position}&nbsp;@{company}</h3>
+            <span className="capitalize text-dark/75 font-medium xs:text-sm">{time} | {address}</span>
+                <ul className="font-medium w-full md:text-sm">
                     {
-                        work.split('•').map((bullet, index) => {
+                        work.split('â€¢').map((bullet, index) => {
                             return (
                                 <li key={index} className="p-2">
                                     <p style={{ textAlign: 'justify' }}>
-                                        <span style={{fontWeight: 'bold'}}>•  </span>{bullet}
+                                        <span style={{fontWeight: 'bold'}}>  </span>{bullet}
                                     </p>
                                 </li>
                             )
@@ -27,6 +27,7 @@ const Details = ({position, company, time, address, work}) => {
         </li>
     )
 }
+
 
 const Experience = () => {
     const ref = useRef(null);
@@ -39,10 +40,10 @@ const Experience = () => {
     <div className='mt-32'>
         <h2 className='w-full text-center' style={{fontSize: '50px', fontWeight: 'bold'}}>Experience</h2>
         <div ref={ref} className='w-[75%] mx-auto relative'>
-            <motion.div style={{scaleY: scrollYProgress }} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top'/>
+            <motion.div style={{scaleY: scrollYProgress}} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top'/>
 
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
-                <Details
+            <Details
                     position="Full Stack Developer Intern" company="University of Alberta"
                     time="May 2024 – Aug 2024" address="Alberta, Canada"
                     work="Developed a full stack Air Quality (AQHI) monitoring dashboard for the region of Edmonton to ensure children’s supervisors know when it is safe to play outside.
@@ -79,4 +80,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Experience;
