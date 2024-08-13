@@ -12,7 +12,7 @@ const Details = ({position, company, time, address, work}) => {
             <span className="capitalize text-dark/75 font-medium xs:text-sm">{time} | {address}</span>
                 <ul className="font-medium w-full md:text-sm">
                     {
-                        work.split('â€¢').map((bullet, index) => {
+                        work.split('• ').map((bullet, index) => {
                             return (
                                 <li key={index} className="p-2">
                                     <p style={{ textAlign: 'justify' }}>
